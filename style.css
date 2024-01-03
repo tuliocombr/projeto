@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -59,7 +60,6 @@ body * {
 
 #profile p {
   font-weight: 500;
-  font-size: 16px;
   line-height: 24px;
   margin-top: 8px;
 }
@@ -113,19 +113,22 @@ ul {
 
 ul li a {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  
   padding: 16px 24px;
 
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
-  backdrop-filter: blur (4px);
-  -webkit-backdrop-filter: blur (4px);
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 
   text-decoration: none;
   font-weight: 500;
-  transition: background-color 0.2s;
+
+  transition: background 0.2s;
 }
 ul li a:hover {
   background: var(--surface-color-hover);
